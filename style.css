@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 :root {
-  --bg-color: #a9a9a9;
+  --bg-color: #ffffff;
   --main-color: #fdc504;
-  --white-color: #ffffff;
   --black-color: #000000;
 }
 html {
@@ -48,34 +47,34 @@ a {
 }
 .caption__rs {
   background-color: var(--bg-color);
-  background-image: linear-gradient(135deg, rgba(255,255,255,1) 55%, rgba(253,197,4,1) 55%, rgba(253,197,4,1) 100%);
+  background-image: linear-gradient(135deg, rgba(0,0,0,1) 55%, rgba(253,197,4,1) 55%, rgba(253,197,4,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 65px;
 }
+.caption__sch {
+  background-color: var(--bg-color);
+  background-image: linear-gradient(135deg, rgba(0,0,0,1) 52%, rgba(253,197,4,1) 52%, rgba(253,197,4,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .caption__oo {
   color: var(--black-color);
   letter-spacing: -8px;
-}
-.caption__sch {
-  background-color: var(--bg-color);
-  background-image: linear-gradient(135deg, rgba(255,255,255,1) 52%, rgba(253,197,4,1) 52%, rgba(253,197,4,1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .caption__l {
   color: var(--main-color);
 }
 .subcaption {
   padding-top: 20px;
-  color: var(--white-color);
+  color: var(--black-color);
   text-transform: uppercase;
   font-size: 50px;
   text-align: center;
 }
 .date {
   padding-top: 20px;
-  color: var(--white-color);
+  color: var(--black-color);
   font-size: 24px;
   font-weight: 700;
   text-align: center;
