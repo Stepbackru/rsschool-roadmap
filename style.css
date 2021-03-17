@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 :root {
-  --bg-color: #ffffff;
   --main-color: #fdc504;
   --black-color: #000000;
+  --white-color: #ffffff;
 }
 html {
   scroll-behavior: smooth;
@@ -46,14 +46,14 @@ a {
   line-height: 62px;
 }
 .caption__rs {
-  background-color: var(--bg-color);
-  background-image: linear-gradient(135deg, rgba(0,0,0,1) 55%, rgba(253,197,4,1) 55%, rgba(253,197,4,1) 100%);
+  background-color: var(--white-color);
+  background-image: linear-gradient(135deg, rgba(0,0,0,1) 57%, rgba(253,197,4,1) 57%, rgba(253,197,4,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 65px;
+  letter-spacing: 55px;
 }
 .caption__sch {
-  background-color: var(--bg-color);
+  background-color: var(--white-color);
   background-image: linear-gradient(135deg, rgba(0,0,0,1) 52%, rgba(253,197,4,1) 52%, rgba(253,197,4,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,4 +84,48 @@ a {
   height: 40px;
   background: var(--main-color);
   opacity: .7;
+}
+.stages {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.stages__card {
+  width: 395px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.stages__period, .stages__caption, .stages__status {
+  width: 130px;
+  height: 70px;
+  line-height: 70px;
+  color: var(--black-color);
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.stages__period, .stages__caption {
+  color: var(--white-color);
+  opacity: .85;
+  background: linear-gradient(45deg, rgba(253,197,4,1) 0%, rgba(253,197,4,1) 92%, rgba(253,197,4,0) 92%, rgba(253,197,4,0) 100%);
+}
+.stages__caption {
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+.stages__status {
+  text-transform: uppercase;
+  background: repeating-linear-gradient(135deg, var(--main-color) 0 2px,transparent 2px 4px);
+}
+.stages__container {
+  width: 100%;
+  min-height: 100px;
+  border: 1px var(--main-color) solid;
+}
+.stages__list {
+  width: 100%;
+  height: 100%;
+  background: var(--main-color);
+  opacity: .3;
 }
